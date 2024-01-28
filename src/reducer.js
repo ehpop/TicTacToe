@@ -32,9 +32,7 @@ function findWinner(board) {
     return board[1][1];
   }
 
-  arrayFull = isArrayFull(board);
-
-  return arrayFull ? "draw" : null;
+  return isArrayFull(board) ? "draw" : null;
 }
 
 function isArrayFull(board) {
